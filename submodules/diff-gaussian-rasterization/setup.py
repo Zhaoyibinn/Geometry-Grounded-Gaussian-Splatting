@@ -4,11 +4,11 @@ from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
 
 setup(
-    name="diff_gaussian_rasterization",
-    packages=["diff_gaussian_rasterization"],
+    name="gggs_diff_gaussian_rasterization",
+    packages=["gggs_diff_gaussian_rasterization"],
     ext_modules=[
         CUDAExtension(
-            name="diff_gaussian_rasterization._C",
+            name="gggs_diff_gaussian_rasterization._C",
             sources=[
                 "cuda_rasterizer/rasterizer_impl.cu",
                 "cuda_rasterizer/render_forward.cu",
